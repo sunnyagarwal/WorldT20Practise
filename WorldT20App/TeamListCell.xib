@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TeamListCell" id="6aY-8B-rAU" customClass="TeamListCell" customModule="WorldT20App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pbB-22-vjM">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-3c-2tF">
+                        <rect key="frame" x="10" y="-1" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="RDT-hs-Zmn"/>
+                            <constraint firstAttribute="width" constant="60" id="fo7-W8-ZGr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mym-Rp-59T">
+                        <rect key="frame" x="0.0" y="69" width="80" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                <constraints>
+                    <constraint firstItem="Mym-Rp-59T" firstAttribute="top" secondItem="X2H-3c-2tF" secondAttribute="bottom" constant="10" id="88c-Sb-Xpc"/>
+                    <constraint firstAttribute="bottom" secondItem="Mym-Rp-59T" secondAttribute="bottom" constant="10" id="9El-MW-GuT"/>
+                    <constraint firstAttribute="trailing" secondItem="Mym-Rp-59T" secondAttribute="trailing" id="Koc-8D-5md"/>
+                    <constraint firstItem="X2H-3c-2tF" firstAttribute="centerX" secondItem="pbB-22-vjM" secondAttribute="centerX" id="ktk-ua-iPc"/>
+                    <constraint firstItem="Mym-Rp-59T" firstAttribute="leading" secondItem="pbB-22-vjM" secondAttribute="leading" id="lx8-4A-JNe"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" name="AccentColor"/>
+            <size key="customSize" width="80" height="100"/>
+            <connections>
+                <outlet property="flagImage" destination="X2H-3c-2tF" id="oAR-kI-EC6"/>
+                <outlet property="teamName" destination="Mym-Rp-59T" id="GnX-AM-OdE"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="11.383928571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
